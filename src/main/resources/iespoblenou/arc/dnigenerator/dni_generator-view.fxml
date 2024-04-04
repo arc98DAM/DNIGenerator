@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="iespoblenou.arc.dnigenerator.DniGeneratorController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+    <VBox alignment="CENTER" spacing="10" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+    <fx:include fx:id="form" source="view_components/form-view.fxml" />
+    <Label fx:id="generateDniLabel" alignment="CENTER" layoutX="282.0" layoutY="262.0" prefHeight="18.0" prefWidth="350" />
+    <Button layoutX="276.0" layoutY="271.0" onAction="#onGenerateDniButtonClick" text="Generar DNI" />
+   <Button fx:id="eraseDniButton" layoutX="274.0" layoutY="319.0" mnemonicParsing="false" onAction="#onEraseDniButtonClick" text="Esborrar DNI" />
+</VBox>
+</AnchorPane>
